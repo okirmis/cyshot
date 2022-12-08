@@ -1,0 +1,5 @@
+default:
+  image: eclipse-temurin:19-jre-alpine
+
+rspec:
+  script: ./mvnw quarkus:build -Dnative
