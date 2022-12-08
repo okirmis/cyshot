@@ -1,0 +1,15 @@
+{
+  "name": "cypress-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "cypress:headless": "cypress run --config-file cypress.config.js --spec",
+    "cypress:headed": "cypress open --config-file cypress.config.js --e2e"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.2.0"
+  }
+}

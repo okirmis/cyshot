@@ -1,0 +1,4 @@
+{{libraryCode}}
+describe('{{specName}}', () => {
+{{specs}}
+});

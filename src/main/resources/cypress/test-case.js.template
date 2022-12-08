@@ -1,0 +1,4 @@
+    it('{{caseName}}', () => {
+		STATE = createEmptyState("{{fileName}}");
+        {{content}}
+    })
