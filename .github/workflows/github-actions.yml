@@ -1,0 +1,13 @@
+name: Build Native Binary
+run-name: Build Native Binary
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: apt update && apt install -y podman openjdk-19-jdk-headless
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: List files in the repository
+        run: ./mvnw quarkus:build -Dnative
